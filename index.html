@@ -2031,8 +2031,9 @@
         try {
           // ローカルストレージに保存（デモ用）
           // 実際に使用する場合は、以下のコメントを外してWebhook URLを設定してください
-          /*
-          const webhookUrl = 'YOUR_WEBHOOK_URL_HERE';
+          
+         
+          const webhookUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdvgUUXl318RYVVXW3F3wH28kJX455WaQmr_zC1p4pOFSUGeA/viewform?embedded=true';
           await fetch(webhookUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -2042,7 +2043,7 @@
               timestamp: new Date().toISOString()
             })
           });
-          */
+          
 
           const feedbacks = JSON.parse(localStorage.getItem('exiframe_feedbacks') || '[]');
           feedbacks.push({
